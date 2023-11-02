@@ -1,0 +1,313 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+html{
+	font-family: Philosopher;
+	font-weight: 400;
+}
+input, button, textarea{
+	font-family: inherit;
+}
+input::-ms-clear{display: none;}
+
+*,*::before,*::after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+ul,ol,li{
+	list-style: none;
+}
+a,button{
+	cursor: pointer;
+	text-decoration: none;
+}
+:focus, :active{outline: none;}
+a:focus, a:active{outline: none;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+
+img{
+	vertical-align: top;
+}
+h1,h2,h3,h4,h5,h6{
+	font-size: inherit;
+	font-weight: inherit;
+}
+/*--fonts--*/
+/* 900 */
+@font-face {
+	font-family: 'PFDinDisplayPro-Black'; 
+	src: url(fonts/PFDinDisplayPro-Black.ttf); 
+	src: url(fonts/PFDinDisplayPro-Black.woff); 
+}
+/* 700 */
+@font-face {
+	font-family: 'PFDinDisplayPro-Bold'; 
+	src: url(fonts/PFDinDisplayPro-Bold.ttf); 
+	src: url(fonts/PFDinDisplayPro-Bold.woff); 
+}
+/* 500 */
+@font-face {
+	font-family: 'PFDinDisplayPro-Medium'; 
+	src: url(fonts/PFDinDisplayPro-Medium.ttf); 
+	src: url(fonts/PFDinDisplayPro-Medium.woff); 
+}
+/* 400 */
+@font-face {
+	font-family: 'PFDinDisplayPro-Regular'; 
+	src: url(fonts/PFDinDisplayPro-Regular.ttf); 
+	src: url(fonts/PFDinDisplayPro-Regular.woff); 
+}
+/* 300 */
+@font-face {
+	font-family: 'PFDinDisplayPro-Light'; 
+	src: url(fonts/PFDinDisplayPro-Light.ttf); 
+	src: url(fonts/PFDinDisplayPro-Light.woff); 
+}
+/* 100 */
+@font-face {
+	font-family: 'PFDinDisplayPro-Thin'; 
+	src: url(fonts/PFDinDisplayPro-Thin.ttf); 
+	src: url(fonts/PFDinDisplayPro-Thin.woff); 
+}
+/*--Poppins-Bold--*/
+/* 700 */
+@font-face {
+	font-family: 'Poppins-Bold'; 
+	src: url(fonts/Poppins-Bold.ttf); 
+	
+}
+/*--------------*/
+.container{
+	margin: 0 auto;
+	max-width: 1400px;
+}
+.header{
+	width: 100%;
+	height: 100vh;
+}
+.header__container{
+   
+}
+.header__top{
+	width: 100%;
+	min-height: 138px;
+	padding: 38px 100px;
+	background-color: rgba(38, 41, 46, 1);
+    display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header__logo{
+	width: 100px;
+	height: 61px;
+}
+.header__list{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 43px;
+}
+.header__link,
+.header__item{
+    font-size: 18px;
+    font-family: 'PFDinDisplayPro-Regular';
+    line-height: 1.2;
+    color: rgba(190, 184, 177, 1);
+    transition: 0.5s;
+    cursor: pointer;
+}
+.header__item:hover{
+	text-decoration: underline;
+}
+.header__language{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 18px;
+}
+.header__item_language{
+	text-transform: uppercase;
+}
+.header__item_language.active{
+	color: #936F49;
+}
+.header__bottom{
+    height: 516px;
+    background: url('images/bg21.png'), url('images/bg22.png');
+    background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.header__title{
+    font-size: 80px;
+    color: #fff;
+    line-height: 1.2;
+    font-family: 'PFDinDisplayPro-Bold'; 
+}
+.header__arrow{
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+/*-----------------------------*/
+.barn-ville__container{
+    background-image: url('images/bg1.png');
+	background-position: 98% top;
+	background-repeat: repeat-y;
+	padding-top: 112px;
+	padding-bottom: 76px;
+}
+.barn-ville__title{
+    color: #26292E;
+    font-size: 44px;
+    font-family: 'PFDinDisplayPro-Bold';
+    line-height: 1.2;
+    margin-left: 140px;
+    text-transform: uppercase;
+}
+.barn-ville__lines{
+    width: 236px;
+    height: 18px;
+    margin-left: 140px;
+    margin-bottom: 4px;
+}
+.line1,
+.line2{
+    background: #936F49;
+    width: 64%;
+    height: 5px;
+}
+.line2{
+    margin-top: 8px;
+    margin-left: auto;
+}
+.barn-ville__subtitle{
+    color: #26292E;
+    font-size: 20px;
+    line-height: 1.75;
+    font-size: 24px;
+    margin-left: 140px;
+    margin-bottom: 50px;
+    font-family: 'PFDinDisplayPro-Regular';
+    text-transform: uppercase;
+}
+.barn-ville__text{
+    color: #646D70;
+    font-size: 24px;
+    font-family: 'PFDinDisplayPro-Regular';
+    margin-bottom: 89px;
+    line-height: 1.75;
+    margin-left: 140px;
+    max-width: 1080px;
+}
+.video__link{
+    width: 1068px;
+    height: 632px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('images/video.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 140px;
+}
+.video__play{
+    width: 105px;
+}
+/*-----------------------*/
+.gallery__container{
+	padding-top: 108px;
+	padding-bottom: 84px;
+    background-color: #26292E;
+}
+.gallery__title{
+    color: #BEB8B1;
+    font-size: 44px;
+    font-family: 'PFDinDisplayPro-Bold';
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin-bottom: 4px;
+    margin-left: 140px;
+}
+.gallery__lines{
+    width: 208px;
+    height: 18px;
+    margin-left: 140px;
+    margin-bottom: 4px;
+    
+}
+
+.gallery__subtitle{
+    font-size: 20px;
+    color: #BEB8B1;
+    line-height: 1.75;
+    font-family: 'PFDinDisplayPro-Regular';
+    margin-bottom: 51px;
+    margin-left: 140px;
+}
+.gallery__wrapper{
+    width: 1081px;
+    height: 589px;
+    margin-left: 140px;
+}
+/*----------------------------------*/
+.characteristic__container{
+    padding-top: 112px;
+    padding-bottom: 84px;
+    background-image: url('images/bg1.png');
+	background-position: 98% top;
+	background-repeat: repeat-y;
+}
+.characteristic__title{
+    color: #26292E;
+    font-size: 44px;
+    font-family: 'PFDinDisplayPro-Bold';
+    line-height: 1.2;
+    margin-bottom: 4px;
+    width: 315px;
+    margin-left: 140px;
+}
+.characteristic__lines{
+    width: 308px;
+    height: 18px;
+    margin-left: 140px;
+    margin-bottom: 50px;
+    margin-left: 140px;
+}
+.characteristic__text{
+    max-width: 1080px;
+    margin-left: 140px;
+    color: #646D70;
+    font-size: 24px;
+     font-family: 'PFDinDisplayPro-Regular';
+     line-height: 1.75;
+
+}
+.characteristic__list{
+    margin-top: 42px;
+    margin-bottom: 42px;
+    margin-left: 140px;
+}
+.characteristic__item{
+    color:#646D70;
+    font-size: 20px;
+    line-height: 1.75;
+     font-family: 'PFDinDisplayPro-Regular';
+}
+/*---------------------------------------*/
+.map__container{
+	height: 621px;
+}
