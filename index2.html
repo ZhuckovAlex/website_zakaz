@@ -4,10 +4,11 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
+	 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 	<link rel="stylesheet" href="style2.css">
 </head>
 <body>
-		<header class="header">
+	<header class="header">
 		<div class="header__container container">
 	     <div class="header__top">
 	     	<a href="#" class="header__logo-link">
@@ -28,48 +29,117 @@
 				<li class="header__item header__item_language active">RU</li>
 				<li class="header__item header__item_language">EN</li>
 			</ul>
+			<div class="header__menu-icon">
+				<span></span>
+			</div>
 		</div>
 		<div class="header__bottom">
 			<h1 class="header__title">Barn Ville</h1>
 			<img src="images/arrow2.png" alt="стрелка" class="header__arrow">
 		</div>
 	</div>
+</header>
 	<main class="main">
+		<div class="main__container container">
 		<section class="barn-ville">
-			<div class="barn-ville__container container">
+		<div class="barn-ville__container container">	
+			<div class="barn-ville__wrapper">
+			<div class="barn-ville__title-wrapper _anim-items">
+			<div class="barn-ville__title-bg title-bg"></div>
+		<div class="title">
 			<h2 class="barn-ville__title">BARN VILLE</h2>
 			<div class="barn-ville__lines">
 				<div class="barn-ville__line1 line1"></div>
 				<div class="barn-ville__line2 line2"></div>
 			</div>
+            </div>
+            </div>
 			<p class="barn-ville__subtitle">О КЛУБНОМ ПОСЕЛКЕ</p>
 			<p class="barn-ville__text">Клубный экопоселок "Barn Ville " - это не просто современные дома, это образ жизни единомышленников, для которых дом - это среда, которая вдохновляет и наполняет энергией, это возможность жить в гармонии с природой вдали от городской суеты и наслаждаться каждым моментом.
 			</p>
-
+            
 			<a href="#" class="video__link">
 			<img class="video__play" src="images/play.png" alt="play">
 		</a>
 		</div>
+		</div>
 		</section>
 		<section class="gallery">
 			<div class="gallery__container container">
+				<div class="gallery__wrapper">
+					<div class="gallery__title-wrapper _anim-items">
+			<div class="gallery__title-bg title-bg"></div>
+		<div class="title">	
 				<h2 class="gallery__title">ГАЛЕРЕЯ</h2>
 				<div class="gallery__lines">
 				<div class="gallery__line1 line1"></div>
 				<div class="gallery__line2 line2"></div>
 			</div>
+		</div>
+	</div>
 			<p class="gallery__subtitle">ФОТОГРАФИИ ПРОЕКТА</p>
-				<div class="gallery__wrapper">
-					
-				</div>
+				<ul class="gallery__list">
+					<li class="gallery__item gallery__item1">
+						<a href="images/gallery1.png" class="fancybox" rel="group" data-fancybox="gallery" data-caption="Name">
+						<img src="images/gallery1.png" alt="фото">
+					    </a>
+					</li>
+					<li class="gallery__item gallery__item2">
+						<a href="images/gallery2.png" class="fancybox" rel="group"  data-fancybox="gallery" data-caption="Name">
+						<img src="images/gallery2.png" alt="фото">
+					</a>
+					</li>
+					<li class="gallery__item gallery__item3">
+						<a href="images/gallery3.png" class="fancybox" rel="group"  data-fancybox="gallery" data-caption="Name">
+						<img src="images/gallery3.png" alt="фото">
+					</a>
+					</li>
+					<li class="gallery__item gallery__item4">
+						<a href="images/gallery4.png" class="fancybox" rel="group"  data-fancybox="gallery" data-caption="Name">
+						<img src="images/gallery4.png" alt="фото">
+					</a>
+					</li>
+					<li class="gallery__item gallery__item5">
+						<a href="images/gallery5.png" class="fancybox" rel="group"  data-fancybox="gallery" data-caption="Name">
+						<img src="images/gallery5.png" alt="фото">
+					</a>
+					</li>
+					<li class="gallery__item gallery__item6">
+						<a href="images/gallery6.png" class="fancybox" rel="group"  data-fancybox="gallery" data-caption="Name">
+						<img src="images/gallery6.png" alt="фото">
+					</a>
+					</li>
+					<li class="gallery__item gallery__item7">
+						<a href="images/gallery7.png" class="fancybox" rel="group"  data-fancybox="gallery" data-caption="Name">
+						<img src="images/gallery7.png" alt="фото">
+					</a>
+					</li>
+					<li class="gallery__item gallery__item8">
+						<a href="images/gallery8.png" class="fancybox" rel="group"  data-fancybox="gallery" data-caption="Name">
+						<img src="images/gallery8.png" alt="фото">
+					</a>
+					</li>
+					<li class="gallery__item gallery__item9">
+						<a href="images/gallery9.png" class="fancybox" rel="group"  data-fancybox="gallery" data-caption="Name">
+						<img src="images/gallery9.png" alt="фото">
+					</a>
+					</li>
+				</ul>
+			</div>
 			</div>
 		</section>
 		<section class="characteristic">
 			<div class="characteristic__container container">
+				<div class="characteristic__wrapper">
+					<div class="characteristic__title-wrapper _anim-items">
+			<div class="characteristic__title-bg title-bg"></div>
+		<div class="title">	
 				<h2 class="characteristic__title">Техническая характеристика </h2>
 				<div class="characteristic__lines">
 				<div class="characteristic__line1 line1"></div>
 				<div class="characteristic__line2 line2"></div>
+			</div>
+		</div>
 			</div>
 			
 			<div class="characteristic__text">Наша компания строит экологически чистые, теплые, энергоэффективные, с хорошей шумоизоляцией каркасные дома по скандинавской технологии домостроения из дерева. В строительстве домов мы используем современное комплексное решение от компании-лидера на рынке США MiTek:</div>
@@ -82,13 +152,156 @@
 			При проектировании дома с помощью программного обеспечения проводится расчет конструкций на снеговые и ветровые нагрузки региона, а также сейсмическое воздействие в 9-10 баллов.
 			</p>
 			</div>
+			</div>
 		</section>
 		<section class="map">
 			<div class="map__container container">
-				
+				<div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/org/kazakhskiy_natsionalny_agrarny_issledovatelskiy_universitet/1086121848/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Казахский Национальный Аграрный Исследовательский университет</a><a href="https://yandex.ru/maps/162/almaty/category/university/184106140/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">ВУЗ в Алматы</a><iframe class="map__iframe" src="https://yandex.ru/map-widget/v1/?filter=alternate_vertical%3ARequestWindow&ll=76.958932%2C43.245544&mode=search&poi%5Bpoint%5D=76.951913%2C43.241891&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D1086121848&sctx=ZAAAAAgBEAAaKAoSCWPxm8JK30NAEZJ6T%2BW0kUdAEhIJCd%2F7G7RXwz8ROBH92vrpwT8iBgABAgMEBSgKOABAogFIAWoCcnWdAc3MTD2gAQCoAQC9AUBH9Y3CAQWJ5vaMBOoBAPIBAPgBAIICJdCz0L7RgdGC0LjQvdC40YbQsCDQutCw0LfQsNGF0YHRgtCw0L2KAgCSAgMxNTmaAgxkZXNrdG9wLW1hcHM%3D&sll=76.958932%2C43.245544&source=serp_navig&sspn=0.044145%2C0.022462&text=%D0%B3%D0%BE%D1%81%D1%82%D0%B8%D0%BD%D0%B8%D1%86%D0%B0%20%D0%BA%D0%B0%D0%B7%D0%B0%D1%85%D1%81%D1%82%D0%B0%D0%BD&z=14.82" width="100%" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
 			</div>
-		</section>
+			</section>
+	<div class="main__bg">
+        <div class="main__bg-block main__bg-n"></div>
+		<div class="main__bg-block main__bg-n"></div>
+		<div class="main__bg-block"></div>
+		<div class="main__bg-block"></div>
+		<div class="main__bg-block"></div>
+		<div class="main__bg-block"></div>
+		<div class="main__bg-block"></div>
+		<div class="main__bg-block"></div>
+    </div>
+	</div>	
 	</main>
-</header>
+		<footer class="footer">
+		<div class="footer__container container">
+					<div class="footer__title-wrapper _anim-items">
+			<div class="footer__title-bg title-bg"></div>
+		<div class="title">
+			<h2 class="footer__title">КОНТАКТЫ</h2>
+			<div class="footer__lines">
+				<div class="footer__line1 line1"></div>
+				<div class="footer__line2 line2"></div>
+			</div>
+		</div>
+	</div>
+			<ul class="footer__list">
+				<li class="footer__item">
+					<h3 class="footer__item-title">
+					PINE HILLS ARCHITECTS
+                    </h3>
+                    <h4 class="footer__item-subtitle">АЛМАТЫ</h4>
+                    <div class="footer__item-wrapper_1">
+                    <p class="footer__item-text">Площадь Республики, 15, 2 этаж</p>
+                    <p class="footer__item-text">Время работы: с 10:00 до 19:00</p>
+                    <p class="footer__item-text">Выходные: суббота, воскресенье</p>
+                    <p class="footer__item-text"><a class="footer__tel" href="tel:+77777777777">+7 777 777 77 77</a> Инна</p>
+                    <div class="footer__links">
+                    <a href="#">
+                    <img src="images/phone.png" alt="иконка" class="footer__link">
+                    </a>
+                    <a href="#">
+                     <img src="images/whatsapp.png" alt="иконка" class="footer__link">
+                     </a>
+                     <a href="#">
+                     <img src="images/mail.png" alt="иконка" class="footer__link">
+                     </a>
+                     <a href="#">
+                     <img src="images/tiktok.png" alt="иконка" class="footer__link">
+                     </a>
+                     <a href="#">
+                     <img src="images/youtube.png" alt="иконка" class="footer__link">
+                     </a>
+                     <a href="#">
+                     <img src="images/telegram.png" alt="иконка" class="footer__link">
+                     </a>
+                     <a href="#">
+                     <img src="images/instagram.png" alt="иконка" class="footer__link">
+                     </a>
+                    </div>	
+                    </div>
+
+				</li>
+				<li class="footer__item ">
+					<h3 class="footer__item-title">КАРЬЕРА</h3>
+				</li>
+				<li class="footer__item footer__item_3">
+					<h3 class="footer__item-title">СОТРУДНИЧЕСТВО</h3>
+					<ul class="footer__item-wrapper">
+						<li class="footer__item-partition">
+							<h4 class="footer__item-subtitle">ГЛАВНЫЙ ОФИС</h4>
+							 <p class="footer__item-text"><a class="footer__tel" href="tel:+77777777777">+7 777 777 77 77</a></p>
+							 <p class="footer__item-text">Инна</p>
+							  <div class="footer__links">
+							  	 <a href="#">
+                    <img src="images/phone.png" alt="иконка" class="footer__link">
+                    </a>
+                    <a href="#">
+                     <img src="images/whatsapp.png" alt="иконка" class="footer__link">
+                     </a>
+                     <a href="#">
+                     <img src="images/mail.png" alt="иконка" class="footer__link">
+                     </a>
+                     <a href="#">
+                     <img src="images/telegram.png" alt="иконка" class="footer__link">
+                     </a>
+                     <a href="#">
+                     <img src="images/instagram.png" alt="иконка" class="footer__link">
+                     </a>
+							  </div>
+					        <p class="footer__item-text"><a href="mailto:info@mail.by" class="footer__mail">info@mail.by</a></p>
+						</li>
+						<li class="footer__item-partition">
+							<h4 class="footer__item-subtitle">ПОДРЯДЧИКАМ</h4>
+							<p class="footer__item-text"><a class="footer__tel" href="tel:+77777777777">+7 777 777 77 77</a></p>
+							<p class="footer__item-text">Инна</p>
+							 <div class="footer__links">
+							 	 <a href="#">
+                    <img src="images/phone.png" alt="иконка" class="footer__link">
+                    </a>
+                    <a href="#">
+                     <img src="images/whatsapp.png" alt="иконка" class="footer__link">
+                     </a>
+                     <a href="#">
+                     <img src="images/mail.png" alt="иконка" class="footer__link">
+                     </a>
+                     <a href="#">
+                     <img src="images/telegram.png" alt="иконка" class="footer__link">
+                     </a>
+                     <a href="#">
+                     <img src="images/instagram.png" alt="иконка" class="footer__link">
+                     </a>
+							 </div>
+						</li>
+						<li class="footer__item-partition">
+							<h4 class="footer__item-subtitle">ПАРТНЕРАМ</h4>
+							<p class="footer__item-text"><a class="footer__tel" href="tel:+77777777777">+7 777 777 77 77</a></p>
+							<p class="footer__item-text">Инна</p>
+							 <div class="footer__links">
+							 	 <a href="#">
+                    <img src="images/phone.png" alt="иконка" class="footer__link">
+                    </a>
+                    <a href="#">
+                     <img src="images/whatsapp.png" alt="иконка" class="footer__link">
+                     </a>
+                     <a href="#">
+                     <img src="images/mail.png" alt="иконка" class="footer__link">
+                     </a>
+                     <a href="#">
+                     <img src="images/telegram.png" alt="иконка" class="footer__link">
+                     </a>
+                     <a href="#">
+                     <img src="images/instagram.png" alt="иконка" class="footer__link">
+                     </a>
+							 </div>
+					<a href="#" class="footer__link-text">Предложение</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			<p class="footer__text">© 2023 | ООО "Арт-студия "Pine Hills". УНП 191619308</p>
+		</div>
+	</footer>
+ <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script src="script2.js"></script>
 </body>
 </html>
